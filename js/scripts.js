@@ -12,7 +12,7 @@ $(document).ready(function() {
       newArr = [];
       for (let index = 0; index <= number; index+=1){
         newArr.push(index);
-        //console.log(newArr);
+        
       }
     }
 
@@ -30,7 +30,6 @@ $(document).ready(function() {
       else {
         secArr.push(number);
       }
-      //console.log(secArr);
     });
     
     // Spec test //
@@ -44,8 +43,7 @@ $(document).ready(function() {
       else {
         thirdArr.push(number);
       }
-      //console.log(thirdArr);
-
+      
     })
 
     // Spec test//
@@ -59,19 +57,15 @@ $(document).ready(function() {
       else {
         fourArr.push(number);
       }
-      //console.log(fourArr);
-
+    
     });
     
       
     let finalArr = fourArr.join(", ");
-    //$("#newnum").text(" "); 
-    //$("#newnum").show();
+    
     
     //UI LOGIC//
-    //$("#newnum").each(function(){
-      //this.reset();
-    //});
+    
     $("#newnum").text(finalArr);
     
 
