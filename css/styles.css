@@ -2,7 +2,7 @@
   font-style: italic;
   color: white;
   font-size: x-large;
-  padding: 25px;
+  padding: 35px;
 }
 
 body {
@@ -12,12 +12,9 @@ body {
 .jumbotron {
   color: white;
   background-color: black;
+  
 } 
 
-h2 {
-  color: white;
-  padding: 30px;
-}
 
 .card {
   padding: 35px;

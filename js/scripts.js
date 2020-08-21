@@ -68,8 +68,8 @@ $(document).ready(function() {
     
     
       
-      
-    $("#newnum").text(fourArr);
+    let finalArr = fourArr.join(", "); 
+    $("#newnum").text(finalArr);
   })    
 });
 
