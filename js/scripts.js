@@ -45,6 +45,21 @@ $(document).ready(function() {
       console.log(thirdArr);
 
     })
+
+    // Spec test//
+    //Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"//
+
+    let fourArr = [];
+    thirdArr.forEach(function(number) {
+      if ((number+'').indexOf('1') > -1) {
+        fourArr.push("Beep!");
+      }
+      else {
+        fourArr.push(number);
+      }
+      console.log(fourArr);
+
+    })
     
     
     
