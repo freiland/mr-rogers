@@ -16,6 +16,15 @@ $(document).ready(function() {
       }
     }
   
+    // Spec test for most important rule//
+    // If a number containes 3, the entire number is replaced with "wont you be my neighbor".//
+
+    newArr.forEach(function(number) {
+      if ((number+'').indexOf('3') > -1) {
+        number = "Won't you be my neighbor?"
+      }
+    });
+    
 
     if (( ageInt % 3 === 0) || (favNumInt % 7 === 0)) {
       $("#go").hide();
