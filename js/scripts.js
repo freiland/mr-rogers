@@ -3,7 +3,7 @@ $(document).ready(function() {
     //event.preventDefault();
     const numInt = parseInt($("input#num").val());
     
-
+    //Business Logic//
     // Specs //
 
     // write a function that takes a number and returns a range from 0 to that user input number in an array. //
@@ -68,9 +68,10 @@ $(document).ready(function() {
     //$("#newnum").text(" "); 
     //$("#newnum").show();
     
-    $("#newnum").each(function(){
-      this.reset();
-    });
+    //UI LOGIC//
+    //$("#newnum").each(function(){
+      //this.reset();
+    //});
     $("#newnum").text(finalArr);
     
 
