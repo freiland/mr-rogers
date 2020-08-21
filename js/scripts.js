@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("form#question").submit(function(event) {
-    event.preventDefault();
+    //event.preventDefault();
     const numInt = parseInt($("input#num").val());
     
 
@@ -64,8 +64,13 @@ $(document).ready(function() {
     });
     
       
-    let finalArr = fourArr.join(", "); 
+    let finalArr = fourArr.join(", ");
+    $("#newnum").text(" "); 
+    $("#newnum").show();
     $("#newnum").text(finalArr);
+    $("#newnum").show();
+
+    event.preventDefault();
     
 
   })    
