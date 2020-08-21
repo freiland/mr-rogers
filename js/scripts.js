@@ -3,6 +3,18 @@ $(document).ready(function() {
     event.preventDefault();
     const numInt = parseInt($("input#num").val());
     
+
+    // Specs //
+
+    // write a function that takes a number and returns a range from 0 to that user input number in an array. //
+
+    function numArr (number) {
+      newArr = [];
+      for (let index = 0; index <= number; index+=1){
+        newArr.push(index);
+        console.log(newArr);
+      }
+    }
   
 
     if (( ageInt % 3 === 0) || (favNumInt % 7 === 0)) {
