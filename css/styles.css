@@ -2,7 +2,7 @@
   font-style: italic;
   color: white;
   font-size: x-large;
-  padding: 35px;
+  padding: 30px;
 }
 
 body {
@@ -20,6 +20,3 @@ body {
   padding: 35px;
 }
 
-#newnum {
-  display: none;
-}

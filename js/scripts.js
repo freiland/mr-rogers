@@ -65,7 +65,7 @@ $(document).ready(function() {
     
       
     let finalArr = fourArr.join(", "); 
-    $("#newnum").append(finalArr);
+    $("#newnum").text(finalArr);
     
 
   })    
