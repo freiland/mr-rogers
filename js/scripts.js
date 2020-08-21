@@ -30,7 +30,7 @@ $(document).ready(function() {
       else {
         secArr.push(number);
       }
-      console.log(secArr);
+      //console.log(secArr);
     });
     
     // Spec test //
@@ -44,7 +44,7 @@ $(document).ready(function() {
       else {
         thirdArr.push(number);
       }
-      console.log(thirdArr);
+      //console.log(thirdArr);
 
     })
 
@@ -59,17 +59,15 @@ $(document).ready(function() {
       else {
         fourArr.push(number);
       }
-      console.log(fourArr);
+      //console.log(fourArr);
 
     });
     
-    
-    
-    
-    
       
     let finalArr = fourArr.join(", "); 
-    $("#newnum").text(finalArr);
+    $("#newnum").append(finalArr);
+    
+
   })    
 });
 

@@ -19,3 +19,7 @@ body {
 .card {
   padding: 35px;
 }
+
+#newnum {
+  display: none;
+}
