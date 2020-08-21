@@ -12,12 +12,14 @@ $(document).ready(function() {
       newArr = [];
       for (let index = 0; index <= number; index+=1){
         newArr.push(index);
-        console.log(newArr);
+        //console.log(newArr);
       }
     }
+
+    numArr(numInt);
   
     // Spec test for most important rule//
-    // If a number containes 3, the entire number is replaced with "wont you be my neighbor".//
+    // If a number contains 3, the entire number is replaced with "wont you be my neighbor".//
     
     let secArr = [];
     newArr.forEach(function(number) {
@@ -59,54 +61,15 @@ $(document).ready(function() {
       }
       console.log(fourArr);
 
-    })
+    });
     
     
     
     
-    if (( ageInt % 3 === 0) || (favNumInt % 7 === 0)) {
-      $("#go").hide();
-      $("#rust").hide();
-      $('#ruby').hide();
-      $("#python").fadeIn(2000, function() {
-        
-      });
-    }
-
-    else if ((graduationInt < 1980) || (graduationInt % 3 === 0))  {
-      $("#python").hide();
-      $("#ruby").hide();
-      $("#rust").hide();
-      $("#go").fadeIn(2000, function() {
-        
-      });
-    }
-
-    else if (workLocInt === 1)  {
-      $("#python").hide();
-      $("#ruby").hide();
-      $("#go").hide();
-      $("#rust").fadeIn(2000, function() {
-        
-      });
-    }
-
-    else if (compSizeInt === 1)  {
-      $("#python").hide();
-      $("#ruby").hide();
-      $("#rust").hide();
-      $("#go").fadeIn(2000, function() {
-        
-      });
-    }
-
-    else {
-      $("#python").hide();
-      $("#rust").hide();
-      $("#go").hide();
-      $('#ruby').fadeIn(2000, function() {
-        
-      });
-    }
-  });
+    
+      
+      
+      $("#newnum").text(fourArr);
+  })    
 });
+
