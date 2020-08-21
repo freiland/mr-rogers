@@ -1,0 +1,24 @@
+#newnum {
+  font-style: italic;
+  color: white;
+  font-size: x-large;
+  padding: 25px;
+}
+
+body {
+  background-color: black;
+}
+
+.jumbotron {
+  color: white;
+  background-color: black;
+} 
+
+h2 {
+  color: white;
+  padding: 30px;
+}
+
+.card {
+  padding: 35px;
+}

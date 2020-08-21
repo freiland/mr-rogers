@@ -69,7 +69,7 @@ $(document).ready(function() {
     
       
       
-      $("#newnum").text(fourArr);
+    $("#newnum").text(fourArr);
   })    
 });
 
