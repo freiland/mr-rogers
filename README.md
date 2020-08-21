@@ -6,11 +6,11 @@
 
 ## Description
 
-_This webpage takes in a user input number. It returns a list of numbers from zero to the user input integer, but any number with 3 is replaced by the phrase "Won't you be my neighbor?", any number with a 2 is replaced by "Beep!", and anu number with a 1 is replaced by "Boop!". The rules are listed in order, meaning that the "3 rule" will overrule any of the previous rules, and the "2 rule" will overrule the last rule. The program is an exercise in using loops, specifically for and forEach loops in JavaScript as well as storing data in the array object._
+_This webpage takes in a user input number. It returns a list of numbers from zero to the user input integer, but any number with 3 is replaced by the phrase "Won't you be my neighbor?", any number with a 2 is replaced by "Beep!", and any number with a 1 is replaced by "Boop!". The rules are listed in order, meaning that the "3 rule" will overrule any of the previous rules, and the "2 rule" will overrule the last rule. The program is an exercise in using loops, specifically for and forEach loops in JavaScript as well as storing data in the array object._
 
 ## Specifications
 
-* #### **Spec**:  The program returns a range of numbers from 0 to the user input numer
+* #### **Spec**:  The program returns a range of numbers from 0 to the user input number.
   * #### **Input**: 5
   * #### **Output**: 0, 1, 2, 3, 4, 5
 

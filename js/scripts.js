@@ -65,10 +65,14 @@ $(document).ready(function() {
     
       
     let finalArr = fourArr.join(", ");
-    $("#newnum").text(" "); 
-    $("#newnum").show();
+    //$("#newnum").text(" "); 
+    //$("#newnum").show();
+    
+    $("#newnum").each(function(){
+      this.reset();
+    });
     $("#newnum").text(finalArr);
-    $("#newnum").show();
+    
 
     event.preventDefault();
     
