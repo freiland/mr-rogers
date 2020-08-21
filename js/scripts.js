@@ -31,7 +31,24 @@ $(document).ready(function() {
       console.log(secArr);
     });
     
+    // Spec test //
+    // Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"//
 
+    let thirdArr = [];
+    secArr.forEach(function(number) {
+      if ((number+'').indexOf('2') > -1) {
+        thirdArr.push("Boop!");
+      }
+      else {
+        thirdArr.push(number);
+      }
+      console.log(thirdArr);
+
+    })
+    
+    
+    
+    
     if (( ageInt % 3 === 0) || (favNumInt % 7 === 0)) {
       $("#go").hide();
       $("#rust").hide();
