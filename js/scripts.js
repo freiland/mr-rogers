@@ -1,78 +1,80 @@
-$(document).ready(function() {
-  $("form#question").submit(function(event) {
-    //event.preventDefault();
-    const numInt = parseInt($("input#num").val());
-    
-    //____________________________Business Logic____________________________//
-    
-    // Specs //
 
-    // write a function that takes a number and returns a range from 0 to that user input number in an array. //
 
-    function numArr (number) {
-      newArr = [];
-      for (let index = 0; index <= number; index+=1){
-        newArr.push(index);
-        
-      }
-    }
+    
+            
+//____________________________Business Logic____________________________//
+            
+            
+            
+function numArr (number) {
+  newArr = [];
+  for (let index = 0; index <= number; index+=1){
+    newArr.push(index);  }
+  return newArr;
+  }
+            
+            
+            
+            function hasThree (array) {
+              let mastArr = [];
+              array.forEach(function(number) {
+                if ((number+'').indexOf('3') > -1) {
+                  mastArr.push("Won't you be my neighbor?");
+                }
+                else {
+                  mastArr.push(number);
+                }
+              })
+              return mastArr;
+            };
 
-    numArr(numInt);
-  
-    // Spec test for most important rule//
-    // If a number contains 3, the entire number is replaced with "wont you be my neighbor".//
-    
-    let secArr = [];
-    newArr.forEach(function(number) {
-      
-      if ((number+'').indexOf('3') > -1) {
-        secArr.push("Won't you be my neighbor?");
-      }
-      else {
-        secArr.push(number);
-      }
-    });
-    
-    // Spec test //
-    // Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"//
+            function hasTwo (array) {
+              let mastArr = [];
+              array.forEach(function(number) {
+                if ((number+'').indexOf('2') > -1) {
+                  mastArr.push("Boop!");
+                }
+                else {
+                  mastArr.push(number);
+                }
+              })
+              return mastArr;
+            };
 
-    let thirdArr = [];
-    secArr.forEach(function(number) {
-      if ((number+'').indexOf('2') > -1) {
-        thirdArr.push("Boop!");
-      }
-      else {
-        thirdArr.push(number);
-      }
-      
-    })
+            function hasOne (array) {
+              let mastArr = [];
+              array.forEach(function(number) {
+                if ((number+'').indexOf('1') > -1) {
+                  mastArr.push("Beep!");
+                }
+                else {
+                  mastArr.push(number);
+                }
+              })
+              return mastArr;
+            };
+                    
+    
+    // USER INTERFACE LOGIC // 
+    $(document).ready(function() {
+    
+      $("form#question").submit(function(event) {
+        event.preventDefault();
+        const numInt = parseInt($("input#num").val());
+        //let mastArr = [];
+        let testArr = numArr(numInt);
+        //let workArr = numArr(numInt);
+        const one = hasThree(testArr);
+        //console.log(one);
+        let two = hasTwo(one);
+        let three = hasOne(two);
 
-    // Spec test//
-    //Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"//
-
-    let fourArr = [];
-    thirdArr.forEach(function(number) {
-      if ((number+'').indexOf('1') > -1) {
-        fourArr.push("Beep!");
-      }
-      else {
-        fourArr.push(number);
-      }
-    
-    });
-    
-      
-    let finalArr = fourArr.join(", ");
-    
-    
-    //______________________________UI LOGIC______________________________________//
-    
+    let finalArr = three.join(", ");
     $("#newnum").text(finalArr);
     
 
-    event.preventDefault();
+    //event.preventDefault();
     
 
   })    
 });
-
